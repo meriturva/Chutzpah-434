@@ -19,6 +19,11 @@ System.register(['angular2/core'], function(exports_1) {
             AppComponent = (function () {
                 function AppComponent() {
                 }
+                AppComponent.prototype.sumNumbers = function (firstNumber, secondNumber) {
+                    var result = firstNumber + secondNumber;
+                    console.log("Here the result:" + result);
+                    return result;
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
